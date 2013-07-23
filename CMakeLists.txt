@@ -29,5 +29,6 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 #rosbuild_add_executable(example examples/example.cpp)
 #target_link_libraries(example ${PROJECT_NAME})
 
-rosbuild_add_executable(video_processor src/video_processor/video_processor.cc src/video_processor/main.cc)
-target_link_libraries(video_processor ${ROS_LIBRARIES} ${Boost_LIBRARIES})
+#rosbuild_add_executable(video_processor src/video_processor/video_processor.cc src/video_processor/main.cc)
+rosbuild_add_executable(drone_video src/video_processor/drone_video.cpp)
+target_link_libraries(drone_video ${ROS_LIBRARIES} ${Boost_LIBRARIES})
